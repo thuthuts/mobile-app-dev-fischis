@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Focus Fish</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="username">What\'s your name?</string>
+    <string name="enterName">"Please enter a name"</string>
+    <string name="start">Start</string>
+    <string name="stop">Give up</string>
+    <string name="setTimer">Set timer</string>
+    <string name="setMinutes">How long do you want to focus?</string>
+    <string name="cancel">Cancel</string>
+    <string name="startTime">10:00</string>
+    <string name="statistics">Statistics</string>
+    <string name="profilePictureDesc">Profile picture</string>
+    <string name="totalFocusedTime">Total focused time:</string>
+    <string name="inHours">in hours:</string>
+    <string name="defaultQuote">Only dead fish go with the flow</string>
+
+    <string name="buy">buy</string>
+    <string name="detail">detail</string>
+    <string name="noMoney">You don\'t have enough money</string>
+    <string name="killingFish">You killed your fish!</string>
+    <string name="receivedvedFish">Well done!</string>
+    <string name="accept">Accept</string>
+    <string name="alreadyBought">already bought</string>
+    <string name="fishName">Name</string>
+    <string name="fishPrice">Price</string>
+    <string name="clownFishName">He is friendly to us all and very sensible</string>
+    <string name="pandaMoor">"A little bit naughty but very energetic and fearless"</string>
+    <string name="pandaMoorGreen"> "Very vivid and lively. Likes to eat all the time"
+</string>
+    <string name="pandaMoorPink">"Very intelligent and bossy, doesn't like lazy people"</string>
+    <string name="minutesFocusedTime">"%d min"</string>
+    <string name="MinutesInTimer">":00"</string>
+
+
+
+
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Focus Fish</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_text">Willkommen</string>
+    <string name="username">Wie ist dein Name?</string>
+    <string name="enterName">"Bitte gib einen Namen ein."</string>
+    <string name="start">Start</string>
+    <string name="stop">Gib auf</string>
+    <string name="setTimer">Stell die Stoppuhr</string>
+    <string name="setMinutes">Wie lang möchtest du dich konzentrieren?</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="startTime">10:00</string>
+    <string name="detail">Detail</string>
+    <string name="buy">kaufen</string>
+
+    <string name="statistics">Statistiken</string>
+    <string name="profilePictureDesc">Profilbild</string>
+    <string name="totalFocusedTime">Fokussierte Zeit:</string>
+    <string name="inHours">in Stunden:</string>
+    <string name="defaultQuote">Nur tote Fische schwimmen mit dem Strom</string>
+
+
+    <string name="noMoney">Du hast nicht genug Geld!</string>
+    <string name="killingFish">Dein Fisch ist gestorben!</string>
+    <string name="receivedvedFish">Glückwunsch! </string>
+    <string name="accept">Okay</string>
+    <string name="alreadyBought">Schon gekauft</string>
+    <string name="fishName">Name</string>
+    <string name="fishPrice">Preis</string>
+
+    <string name="clownFishName">Er ist freundlich zu allen und sehr sensibel</string>
+    <string name="pandaMoor">"Ein bisschen frech aber sehr energetisch und furchtlos"</string>
+    <string name="pandaMoorGreen"> "Sehr quirlig und lebendig. Liebt es viel zu essen!"
+</string>
+    <string name="pandaMoorPink">"Sehr intelligent und bosshaft, mag keine faulen Leute."</string>#
+    <string name="minutesFocusedTime">"%d min"</string>
+    <string name="MinutesInTimer">":00"</string>
+
+
+
+
+</resources>

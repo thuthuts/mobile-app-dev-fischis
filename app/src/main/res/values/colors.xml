@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+ <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_color">#42A5F5</color>
+    <color name="primary_color_variant">#1976D2</color>
+
+   <color name="secondary_color">#90CAF9</color>
+   <color name="secondary_color_variant">#345066</color>
+
+    <color name="appBackground">#E3F2FD</color>
+    <color name="appBackgroundNight">#1F1B24
+    </color>
+
+    <color name="darkerAccentColor">#032739</color>
+    <color name="accentColor">#48D6E0</color>
+
+    <color name="textColorPrimary">#0D47A1</color>
+
+
+
+
+
+
+</resources>

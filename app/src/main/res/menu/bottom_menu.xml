@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/timerFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_home" />
+
+    <item
+        android:id="@+id/shopRecyclerViewFragment2"
+        android:title="Shop"
+        android:icon="@drawable/ic_shopping_cart" />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Profile"
+    android:icon="@drawable/ic_baseline_account_circle_24" />
+
+
+</menu>

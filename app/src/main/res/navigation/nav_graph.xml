@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userLoginFragment2">
+    <fragment
+        android:id="@+id/userLoginFragment2"
+        android:name="de.hdmstuttgart.fischis.ui.login.UserLoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_toTimer"
+            app:destination="@id/timerFragment"
+            app:enterAnim="@transition/fade_in_animation"
+            app:exitAnim="@transition/fade_out_animation"
+            app:popEnterAnim="@transition/fade_in_animation"
+            app:popExitAnim="@transition/fade_out_animation"
+            app:popUpTo="@+id/nav_graph"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/timePickerDialog"
+        android:name="de.hdmstuttgart.fischis.ui.timer.TimePickerDialog"
+        android:label="TimePickerDialog" >
+        <action
+            android:id="@+id/action_timePickerDialog_to_timerFragment"
+            app:destination="@id/timerFragment" />
+
+    </dialog>
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="de.hdmstuttgart.fischis.ui.timer.TimerFragment"
+        android:label="Timer" >
+        <action
+            android:id="@+id/actionTimerToKilledFish"
+            app:enterAnim="@transition/enter_left"
+            app:exitAnim="@transition/exit_right"
+            app:popEnterAnim="@transition/enter_left"
+            app:popExitAnim="@transition/exit_right"
+            app:destination="@id/killedFishFragment" />
+        <action
+            android:id="@+id/actionTimertoReceiveFish"
+            app:destination="@id/receiveFishFragment"
+            app:enterAnim="@transition/enter_left"
+            app:exitAnim="@transition/exit_right"
+            app:popEnterAnim="@transition/enter_left"
+            app:popExitAnim="@transition/exit_right"/>
+        <action
+            android:id="@+id/action_timerFragment_to_timePickerDialog"
+            app:destination="@id/timePickerDialog"
+            app:enterAnim="@transition/enter_right"
+            app:exitAnim="@transition/exit_left"
+            app:popEnterAnim="@transition/enter_right"
+            app:popExitAnim="@transition/exit_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/shopRecyclerViewFragment2"
+        android:name="de.hdmstuttgart.fischis.ui.shop.ShopRecyclerViewFragment"
+        android:label="Shop"
+        tools:layout="@layout/fragment_shop_recycler_view">
+        <action
+            android:id="@+id/action_buyFish"
+            app:destination="@id/buyFishDialogFragment"
+            />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/buyFishDialogFragment"
+        android:name="de.hdmstuttgart.fischis.ui.shop.BuyFishDialogFragment"
+        android:label="BuyFishDialogFragment" >
+
+        <action
+            android:id="@+id/action_buyFishDialogFragment_to_shopRecyclerViewFragment2"
+            app:destination="@id/shopRecyclerViewFragment2" />
+        <argument
+            android:name="fishType"
+            app:argType="de.hdmstuttgart.fischis.fish.FishType" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="de.hdmstuttgart.fischis.ui.profile.ProfileFragment"
+        android:label="Profile" />
+    <fragment
+        android:id="@+id/killedFishFragment"
+        android:name="de.hdmstuttgart.fischis.ui.timer.KilledFishFragment"
+        android:label="KilledFishFragment" >
+        <action
+            android:id="@+id/actionKilledFishToTimer"
+            app:destination="@id/timerFragment"
+            app:enterAnim="@transition/enter_right"
+            app:exitAnim="@transition/exit_left"
+            app:popEnterAnim="@transition/enter_right"
+            app:popExitAnim="@transition/exit_left"/>
+    </fragment>
+    <fragment
+        android:id="@+id/receiveFishFragment"
+        android:name="de.hdmstuttgart.fischis.ui.timer.ReceiveFishFragment"
+        android:label="ReceiveFishFragment" >
+        <argument
+            android:name="drawable"
+            app:argType="integer" />
+        <action
+            android:id="@+id/actionReceiveFishToTimer"
+            app:destination="@id/timerFragment"
+            app:enterAnim="@transition/enter_right"
+            app:exitAnim="@transition/exit_left"
+            app:popEnterAnim="@transition/enter_right"
+            app:popExitAnim="@transition/exit_left" />
+
+    </fragment>
+
+</navigation>
